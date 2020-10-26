@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: url('https://fsa.zobj.net/crop.php?r=1KwYCLFkvg4iV3X5u2bKLZoTnfkoZHotsH77dDJiSxJrZGw4boOyGqetc1KSslEKru2u2Wj-OFkcXGmgMC1NLjoZwpXJ1ec_eZXxnBUieD5407Lfkkl4RUpCPbulN9OBs4jR-nBAtzlFZw19');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins',sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+  display: flex;
+  position: absolute;
+  top: 20%;
+}
+h1{
+  display: none;
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 100px;
+  background: linear-gradient(silver,#000);
+  width: 300px;
+  height: auto;
+}
+#card img{
+  width: 100%;height: 300px;padding: 20px;
+}
+#card h2{
+  color: #fff;letter-spacing: 2px;text-transform: uppercase;
+}
+#card a{
+  background-color: #000;
+  color: aqua;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  letter-spacing: 1.5px;
+  width: 150px;
+}
+@media only screen and (max-width : 468px){
+  body {
+    background: #000;
+  }
+  h1{
+    color: royalblue;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-weight: 500;
+  }
+  #root{
+    flex-direction: column;
+    top: 30px;left: 0;
+  }
+  #card{
+    margin-left: 0px; 
+    width: 100%;
+    height: auto;
+  }
+}
